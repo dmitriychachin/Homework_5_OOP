@@ -61,4 +61,9 @@ public class RepositoryFile implements Repository {
         }
         saveUser(users);
     }
+
+    public void deleteUser(User user) {
+        List<User> users = getAllUsers();
+        users.remove(user);
+    }
 }
